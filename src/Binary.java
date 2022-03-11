@@ -42,5 +42,9 @@ public class Binary
         {
             System.out.println(ss+" found at "+nn);
         }
+        else
+        {
+            System.out.println("Not Found");
+        }
     }
 }
