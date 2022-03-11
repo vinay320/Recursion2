@@ -4,12 +4,11 @@ import java.util.Scanner;
 public class Search {
      static int Searchh(int[] arr, int i, int ss)
     {
-        if(i<=0) {
+        if(i<0) {
             return -1;
         }
        else if(arr[i]==ss)
-       {
-            System.out.println("t");
+        {
             return i;
         }
         return Searchh(arr,(i-1),ss);
@@ -29,7 +28,7 @@ public class Search {
         int a=Searchh(arr,(arr.length-1),ss);
         if(a>=0)
         {
-            System.out.println(ss+ " found");
+            System.out.println(ss+ " found at "+a);
         }
         else
         {
